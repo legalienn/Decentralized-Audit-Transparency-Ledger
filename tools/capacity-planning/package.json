@@ -4,8 +4,8 @@
   "description": "Predictive capacity planning with ML forecasting, auto-scaling policies, and Kubernetes HPA/VPA integration",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "build": "node init && tsc",
+    "start": "node init && node dist/server.js"
   },
   "dependencies": {
     "express": "^4.19.2",

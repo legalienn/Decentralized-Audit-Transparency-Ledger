@@ -4,8 +4,8 @@
   "description": "Contract event incident management, PagerDuty/Opsgenie integrations, on-call rotations, escalation policies, and postmortems",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "build": "node init && tsc",
+    "start": "node init && node dist/server.js"
   },
   "dependencies": {
     "express": "^4.19.2",

@@ -4,7 +4,7 @@
   "description": "Cloudflare Worker for low-latency event ingestion and query caching",
   "main": "worker.ts",
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "node init && wrangler dev",
     "deploy": "wrangler deploy"
   },
   "dependencies": {

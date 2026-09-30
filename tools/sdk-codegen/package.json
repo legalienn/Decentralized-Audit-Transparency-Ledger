@@ -8,7 +8,7 @@
     "sdk-codegen": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "typecheck": "tsc --noEmit",
     "extract": "ts-node src/cli.ts extract",
     "generate": "ts-node src/cli.ts generate",

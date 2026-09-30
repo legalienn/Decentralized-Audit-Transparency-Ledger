@@ -4,7 +4,7 @@
   "description": "Consumer-Driven API Contract Testing with Pact for Decentralized Audit Ledger",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test:consumers": "ts-node consumers/run-consumers.ts",
     "test:provider": "ts-node provider/verify-provider.ts",
     "test:all": "npm run test:consumers && npm run test:provider",

@@ -4,8 +4,8 @@
   "private": true,
   "main": "notifier.ts",
   "scripts": {
-    "start": "ts-node notifier.ts",
-    "dev": "ts-node-dev --respawn --transpile-only notifier.ts",
+    "start": "node init && ts-node notifier.ts",
+    "dev": "node init && ts-node-dev --respawn --transpile-only notifier.ts",
     "test": "jest"
   },
   "dependencies": {
@@ -26,7 +26,13 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "moduleFileExtensions": ["ts", "js", "json"],
-    "testMatch": ["**/*.test.ts"]
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "testMatch": [
+      "**/*.test.ts"
+    ]
   }
 }

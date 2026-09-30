@@ -4,8 +4,8 @@
   "description": "Multi-region deployment, cross-region replication, global traffic routing, and automated DR failover engine",
   "main": "dist/server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "build": "node init && tsc",
+    "start": "node init && node dist/server.js"
   },
   "dependencies": {
     "express": "^4.19.2",

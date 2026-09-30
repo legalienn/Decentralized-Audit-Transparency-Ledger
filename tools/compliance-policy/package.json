@@ -8,7 +8,7 @@
     "compliance-policy": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "check": "ts-node src/cli.ts check",
     "drift": "ts-node src/cli.ts drift",
     "report": "ts-node src/cli.ts report",

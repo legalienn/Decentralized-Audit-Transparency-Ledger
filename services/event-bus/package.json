@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
@@ -18,6 +18,8 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testMatch": ["**/*.test.ts"]
+    "testMatch": [
+      "**/*.test.ts"
+    ]
   }
 }

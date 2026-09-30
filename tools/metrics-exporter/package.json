@@ -4,7 +4,7 @@
   "description": "Prometheus metrics exporter for the AuditLedger Soroban contract",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node init && node src/index.js",
     "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "dependencies": {

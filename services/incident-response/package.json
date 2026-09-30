@@ -5,8 +5,8 @@
   "description": "In-cluster incident response webhook receiver for the AuditLedger runtime-security (Falco) stack",
   "main": "server.ts",
   "scripts": {
-    "start": "ts-node server.ts",
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
+    "start": "node init && ts-node server.ts",
+    "dev": "node init && ts-node-dev --respawn --transpile-only server.ts",
     "test": "jest"
   },
   "dependencies": {
@@ -24,7 +24,13 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "moduleFileExtensions": ["ts", "js", "json"],
-    "testMatch": ["**/*.test.ts"]
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "testMatch": [
+      "**/*.test.ts"
+    ]
   }
 }
